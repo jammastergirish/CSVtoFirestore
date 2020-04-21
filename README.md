@@ -1,6 +1,6 @@
 # CSVtoFirestore
 
-To bridge my conceptual leap from SQL to NoSQL, I wanted to convert MySQL tables/CSV files to Google Cloud Platform's much looser Firestore database structure (where, effectively, a table is a collection, and a row is a document).
+To bridge my conceptual leap from SQL to NoSQL, I wanted to convert MySQL tables/CSV files to Google Cloud Platform's much looser Firestore database structure (where, effectively, a table is a collection and a row is a document).
 
 ## Execution
 This script is designed to run in Google Cloud Platform's App Engine. For larger CSV files, this may be a problem and you may need to reconfigure it to run on a different server (or locally); if so, you'll find [this](https://cloud.google.com/firestore/docs/quickstart-servers#php) useful to authenticate, etc.
