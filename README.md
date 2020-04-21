@@ -9,3 +9,6 @@ This script is designed to run in Google Cloud Platform's App Engine. For larger
 1. the location of the CSV (remote or local)
 2. the name of the collection you'd like it in (think table name)
 3. optionally, whether you want to set each document ID (think row ID) to auto increment or simply want Firestore to set it randomly (the default)
+
+## Another one-off option
+If you're not needing to do this dynamically, take a look at [Google's options](https://firebase.google.com/docs/firestore/manage-data/export-import) for importing and exporting to/from Firestore.
