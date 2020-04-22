@@ -21,13 +21,13 @@ function CSVtoFirestore($CSV, $CollectionName, $AutoIncrementDocumentID = false)
                 $j=0;
                 foreach($data as $data_singular) // Go through each element of a line
                 {
-                    if (is_numeric($data_singular))
+                    if (is_numeric($data_singular)) // Is it numeric?
                     {
-                        $DataToInput[$fields[$j]] = doubleval($data_singular);
+                        $DataToInput[$fields[$j]] = doubleval($data_singular); // If so, add it to the data to be entered and ensure it goes in as a double
                     }
                     else
                     {
-                        $DataToInput[$fields[$j]] = $data_singular; // Set the array of data to enter
+                        $DataToInput[$fields[$j]] = $data_singular; // If not, it'll go in as a string
                     }
                     $j++;
                 }
